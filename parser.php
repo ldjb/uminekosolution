@@ -2,6 +2,7 @@
 $title = "Episode 0: Prequel of the Golden Witch";
 $topic = 999999999;
 $urlPrefix = "";
+//$urlPrefix = "http://uminekosolution.gdn0.com/";
 echo <<<EOT
 <!DOCTYPE html>
 <html>
@@ -25,7 +26,7 @@ $output = <<<EOT
 <div id="content">
 <p><a href=".">≪Back to index</a></p>
 EOT;
-$input = file_get_contents("ep0.txt");
+$input = file_get_contents("ep4.txt");
 $input = str_replace("\n\n", "\n", $input);
 $input = str_replace("[red]", '<span style="color: red;">', $input);
 $input = str_replace("[/red]", '</span>', $input);
@@ -109,6 +110,9 @@ foreach ($input as $value) {
 		}
 		elseif ($value == "[/blockquote]") {
 			$output = $output . "</blockquote>";
+		}
+		elseif ($value == "[hr]") {
+			$output = $output . "<hr>";
 		}
 		elseif ($value == "") {
 		}
