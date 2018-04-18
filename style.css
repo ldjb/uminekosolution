@@ -1,0 +1,47 @@
+body {
+	background-color: #123;
+	color: #ddd;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: auto;
+	padding: 0 1em;
+	max-width: 64em;
+	text-align: justify;
+}
+ol, ul {
+	padding-left: 1em;
+}
+li {
+	margin-bottom: 1em;
+}
+hr {
+	color: #258;
+}
+a {
+	color: #7bd;
+	text-decoration: none;
+}
+a:hover {
+	color: #9df;
+}
+p, li {
+	line-height: 150%;
+}
+h1 {
+	text-align: center;
+}
+.red {
+	color: #f00;
+}
+.footer {
+	font-style: italic;
+}
+.sign {
+	text-align: right;
+}
+.sign:before {
+	content: "—";
+}
+h2 {
+	border-bottom: 0.1em solid #7bd;
+	padding-bottom: 0.1em;
+}

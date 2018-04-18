@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{% if page.path != "index.md" %}{{page.title}} | {% endif %}GabeZhul's solution to Umineko no Naku Koro ni</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+{% capture backlink %}
+{% if page.path != "index.md" %}
+<p><a href=".">≪Back to index</a></p>
+{% endif %}
+{% endcapture %}
+{{backlink}}
+{{content
+|replace: '<em>', '<span class="red">'
+|replace: '</em>', '</span>'}}
+<hr>
+<p class="footer">All text &copy;2013-2014 <a href="https://vndb.org/u293">GabeZhul</a>. <a href="https://vndb.org/{{page.tid}}">Originally posted on VNDB.</a> Distributed with permission.</p>
+{{backlink}}
+</body>
+</html>
