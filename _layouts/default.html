@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{% if page.path != "index.md" %}{{page.title}} | {% endif %}GabeZhul's solution to Umineko no Naku Koro ni</title>
+<title>{% if page.url != "/index" %}{{page.title}} | {% endif %}GabeZhul's solution to Umineko no Naku Koro ni</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 {% capture backlink %}
-{% if page.path != "index.md" %}
+{% if page.url != "/index" %}
 <p><a href=".">≪Back to index</a></p>
 {% endif %}
 {% endcapture %}

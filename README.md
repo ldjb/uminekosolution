@@ -1,3 +1,6 @@
+---
+permalink: index
+---
 # GabeZhul's solution to Umineko no Naku Koro ni
 
 So, after I began replaying Umineko from the beginning, I decided to combine pleasure with work and start writing up the best explanations I could figure out (or find on the net). This is not as much about the grand mysteries of the series as a focused work on the murders and other "small" mysteries. I also think it will be a good substitute for going down memory lane for those like me, who are/were really turned away from a re-reading by the sheer size of the series, or simply didn't have the time to re-read the series just to verify things. :)
